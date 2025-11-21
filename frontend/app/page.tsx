@@ -5,7 +5,7 @@ import TOPIMG from "../public/top-img.png";
 
 export default function Home() {
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto max-w-5xl">
       <main className="">
         <div className="search-section flex items-center">
           <div className="img-container">

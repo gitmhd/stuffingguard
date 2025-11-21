@@ -3,10 +3,13 @@
 :root {
   --dark: #101622;
   --light: #f6f6f8;
+  --text: #9aa1ad;
   --primary: #135bec;
 }
 
 @theme inline {
   --color-dark: var(--dark);
   --color-light: var(--light);
+  --color-text: var(--text);
+  --color-primary: var(--primary);
 }

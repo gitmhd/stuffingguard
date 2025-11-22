@@ -20,7 +20,7 @@ export default function Home() {
               alt="StuffingGuard Logo"
               className="logo w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20"
             />
-            <h1 className="main-title text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-light font-extrabold tracking-[-0.043em]">
+            <h1 className="main-title text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-light font-extrabold tracking-[-0.043em]">
               StuffingGuard
             </h1>
           </div>

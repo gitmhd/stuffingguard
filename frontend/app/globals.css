@@ -12,4 +12,6 @@
   --color-light: var(--light);
   --color-text: var(--text);
   --color-primary: var(--primary);
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
 }

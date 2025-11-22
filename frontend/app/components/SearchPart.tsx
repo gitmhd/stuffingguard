@@ -4,9 +4,11 @@ import { useState } from "react";
 import call from "../utils/call";
 import SHA1 from "crypto-js/sha1";
 import { useLeakStore } from "../store/useLeakStore";
+import { Eye, EyeOff } from "lucide-react";
 
 function SearchPart() {
   const [inputValue, setInputValue] = useState("");
+  const [showInput, setShowInput] = useState(true);
   const { loading, setLeak, setLoading } = useLeakStore();
 
   // Handle the check button click
@@ -98,10 +100,25 @@ function SearchPart() {
           <input
             value={inputValue}
             onChange={(e) => setInputValue(e.target.value)}
-            type="text"
+            onKeyDown={(e) => {
+              if (e.key === "Enter") {
+                handleCheck();
+              }
+            }}
+            type={showInput ? "text" : "password"}
             placeholder="Enter an email or password to check"
-            className="w-full pl-10 pr-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-light focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+            className="w-full pl-10 pr-12 py-3 bg-gray-800 border border-gray-700 rounded-lg text-light focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
           />
+        )}
+        {!loading && (
+          <button
+            onClick={() => setShowInput(!showInput)}
+            type="button"
+            className="absolute inset-y-0 right-0 pr-3 flex items-center text-gray-400 hover:text-light transition-colors"
+            aria-label={showInput ? "Hide input" : "Show input"}
+          >
+            {showInput ? <Eye size={20} /> : <EyeOff size={20} />}
+          </button>
         )}
         {loading && (
           <div className="w-full pl-10 pr-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-light flex items-center justify-center">

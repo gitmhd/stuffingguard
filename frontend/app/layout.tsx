@@ -22,9 +22,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} antialiased bg-dark`}>
-        <VisitCounter />
-        {children}
+      <body className={`${inter.variable} antialiased bg-dark relative`}>
+        {/* Ambient gradient effect */}
+        <div className="fixed top-0 left-0 right-0 h-screen pointer-events-none z-0">
+          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-4xl h-96 bg-primary/20 blur-[120px] rounded-full opacity-50" />
+        </div>
+
+        {/* Content wrapper */}
+        <div className="relative z-10">
+          <VisitCounter />
+          {children}
+        </div>
       </body>
     </html>
   );

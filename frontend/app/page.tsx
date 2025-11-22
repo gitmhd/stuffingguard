@@ -4,7 +4,7 @@ import SecurityTips from "./components/SecurityTips";
 import LOGO from "../public/logo.svg";
 import SearchPart from "./components/SearchPart";
 import ResultWrapper from "./components/ResultWrapper";
-import { Lock } from "lucide-react";
+import { Lock, Database, Mail } from "lucide-react";
 
 export default function Home() {
   return (
@@ -20,7 +20,7 @@ export default function Home() {
               alt="StuffingGuard Logo"
               className="logo w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20"
             />
-            <h1 className="main-title text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-light font-extrabold tracking-[-0.043em]">
+            <h1 className="main-title text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-light font-extrabold tracking-[-0.043em]">
               StuffingGuard
             </h1>
           </div>
@@ -43,6 +43,46 @@ export default function Home() {
         </div>
 
         <ResultWrapper />
+
+        {/* Statistics Section */}
+        <div className="stats-section mt-12">
+          <div className="bg-dark/50 border border-text/10 rounded-lg p-8">
+            <h2 className="text-2xl text-light font-bold text-center mb-6">
+              Powered by Comprehensive Breach Data
+            </h2>
+            <div className="grid md:grid-cols-2 gap-6">
+              {/* Email Records */}
+              <div className="flex items-start gap-4 bg-primary/5 border border-primary/10 rounded-lg p-6">
+                <div className="bg-primary/10 p-3 rounded-lg shrink-0">
+                  <Mail className="text-primary" size={28} />
+                </div>
+                <div>
+                  <div className="text-3xl md:text-4xl text-light font-extrabold mb-2">
+                    4.7B+
+                  </div>
+                  <p className="text-text leading-6">
+                    Email records searched across known data breaches
+                  </p>
+                </div>
+              </div>
+
+              {/* Password Records */}
+              <div className="flex items-start gap-4 bg-primary/5 border border-primary/10 rounded-lg p-6">
+                <div className="bg-primary/10 p-3 rounded-lg shrink-0">
+                  <Database className="text-primary" size={28} />
+                </div>
+                <div>
+                  <div className="text-3xl md:text-4xl text-light font-extrabold mb-2">
+                    1.5B+
+                  </div>
+                  <p className="text-text leading-6">
+                    Password hashes checked for compromises
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </main>
       <SecurityTips />
       <MainFooter />

@@ -1,0 +1,20 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M256 460C256 460 416 380 416 230V100L256 40L96 100V230C96 380 256 460 256 460Z" 
+        stroke="#101622" 
+        stroke-width="32" 
+        stroke-linecap="round" 
+        stroke-linejoin="round"
+        fill="none"/>
+
+  <path d="M256 190V240" 
+        stroke="#9aa1ad" 
+        stroke-width="32" 
+        stroke-linecap="round" 
+        stroke-linejoin="round"/>
+        
+  <path d="M256 320C278.091 320 296 302.091 296 280C296 257.909 278.091 240 256 240C233.909 240 216 257.909 216 280C216 302.091 233.909 320 256 320Z" 
+        stroke="#9aa1ad" 
+        stroke-width="32" 
+        stroke-linecap="round" 
+        stroke-linejoin="round"/>
+</svg>

@@ -1,6 +1,6 @@
 <svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path d="M256 460C256 460 416 380 416 230V100L256 40L96 100V230C96 380 256 460 256 460Z" 
-        stroke="#101622" 
+        stroke="#f6f6f8" 
         stroke-width="32" 
         stroke-linecap="round" 
         stroke-linejoin="round"

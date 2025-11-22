@@ -7,12 +7,15 @@ function MainFooter() {
       <hr className="text-text/10" />
 
       <nav className="flex justify-center items-center gap-8 pt-12 text-text">
-        <Link href="#" className="hover:text-light">
+        <Link href="/about" className="hover:text-light transition-colors">
+          About
+        </Link>
+        <Link href="/privacy" className="hover:text-light transition-colors">
           Privacy Policy
         </Link>
         <Link
           href="https://github.com/gitmhd/stuffingguard/blob/main/README.md"
-          className="hover:text-light"
+          className="hover:text-light transition-colors"
         >
           Project Information
         </Link>

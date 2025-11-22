@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
-
 // Generic API response type
 interface ApiResponse<TData> {
   error?: string;
